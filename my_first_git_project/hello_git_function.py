@@ -5,7 +5,7 @@ def give_me_a_hello():
 
 
 def give_me_a_goodbye():
-    pass
+    raise NotImplementedError("please create a message that says goodbye")
 
 
 
