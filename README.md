@@ -84,20 +84,25 @@ For the first feature branch, the one that restructured the python file, do the 
 
 - go to the other branch, the one that solves the decryption, and check if github notices any conflicts that need a manual fix before merging to develop
 - there may possibly turn up some merge conflicts. To follow some good Git Hygiene practices, we do the following:
-first merge the new version of develop to your branch, before merging your work to develop. This eschews that unresolved conflicts will turn up in the develop branch
+
+- first merge the new version of develop to your branch, before merging your work to develop. This eschews that unresolved conflicts will turn up in the develop branch
+
 Merging the develop branch into your own branch can be done in two ways:
 - git merge
+
  OR
 - git rebase
 
 The syntax for rebase is a bit less intuitive if you are going to use extra parameters, but we won't need them today. So for both you need to do the following:
-do cmd: git checkout develop
-do cmd: git pull
-do cmd: git checkout feature/*branch_name*  (the branch that still needs to be merged to develop)
-do cmd: git status (check if you are really on your feature branch, and not on develop)
-do cmd: git merge develop    OR  git rebase develop
-do cmd: fix possible conflicts
-after resolving all conflicts, do cmd: git push origin feature/*branch_name*
+
+- do cmd: git checkout develop
+- do cmd: git pull
+- do cmd: git checkout feature/*branch_name*  (the branch that still needs to be merged to develop)
+- do cmd: git status (check if you are really on your feature branch, and not on develop)
+- do cmd: git merge develop    OR  git rebase develop
+- do cmd: fix possible conflicts
+- do test python files: check if your code still works!
+- after resolving all conflicts, do cmd: git push origin feature/*branch_name*
 
 check your branch online, and see if git sees possible merge conflicts, if not merge your branch to develop and close the pull request
 
