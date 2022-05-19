@@ -25,7 +25,7 @@ Step 2: add and commit a file to your git project (add/commit tracking and not t
 
 Step 3: create a github project, and upload this current project to github   (sync to github and origin concept)
 
-- do cmd: git remote add origin https://github.com/Widgetstein/git_training.git
+- do cmd: git remote add origin  \*(see online the link)\*
 - do cmd: git push -u origin master
 
 check your new project online!
@@ -34,7 +34,7 @@ check your new project online!
 
 Step 4: run python file and make a small change (rehearse: git status, git add/commit, git push)
 
-- do: run python file hello_git
+- do: run python file hello_git_scripting.py
 - do: fix error
 - do cmd: git status
 - do cmd: git add .......
